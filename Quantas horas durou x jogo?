@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class horariojogo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int horarioinicial, horariofinal, tempojogo;
+     
+        System.out.println("Digite o horario inicial:");
+        horarioinicial = sc.nextInt();
+        System.out.println("Digite o horario final:");
+        horariofinal = sc.nextInt();
+
+        if (horarioinicial == horariofinal) {
+        System.out.println("O jogo durou por VINTE E QUATRO HORAS?! MEU DEUS!");
+        } else { 
+        if (horariofinal > horarioinicial) {
+            System.out.println("O jogo durou por " + (horariofinal - horarioinicial) + " horas!");
+        } else {        
+        if (horarioinicial > horariofinal) {
+            System.out.println("O jogo durou por " + Math.abs((tempojogo = ((horarioinicial - horariofinal) - 24))) + " horas!");
+        }
+
+        }
+            
+    }
+}
+        
