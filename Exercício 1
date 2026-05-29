@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Flamengo {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int A, B, C, D;
+
+        System.out.println("Digite o valor de A: ");
+
+        A = sc.nextInt();
+
+        System.out.println("Digite o valor de B: ");
+
+        B = sc.nextInt();
+
+         System.out.println("Digite o valor de C: ");
+        
+         C = sc.nextInt();
+        
+         System.out.println("Digite o valor de D: ");
+       
+         D = sc.nextInt();
+
+    System.out.println("Resultado de " + A + " + " + B + ": " + (A * B));
+    System.out.println("Resultado de " + C + " + " + D + ": " + (C * D));
+    System.out.println("A diferença dos valores é igual a: " + ((A*B) - (C*D)));
