@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class AreaCirculo{
+
+public static void main(String[] args) {
+    
+    float x;
+    float A;
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Digite o raio do circulo:");
+    x = sc.nextFloat();
+    A = (float) (Math.pow(x, 2) * 3.14159);
+    System.out.printf("%.4f%n", A);
+    
+
+    
+
+
+
+
+}
+
+
+
+
+
+}
