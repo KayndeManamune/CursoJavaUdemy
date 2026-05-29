@@ -1,0 +1,20 @@
+public class expressoeslogicas {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int x;
+
+        System.out.println(
+                "Digite um número, de alguma maneira misteriosa eu irei descobrir se ele é negativo ou positivo.");
+        x = sc.nextInt();
+
+        if (x >= 0) {
+            System.out.println("Esse número é POSITIVO!!");
+        } else {
+            System.out.println("Esse número é NEGATIVO?!");
+
+        }
+
+    }
+}
