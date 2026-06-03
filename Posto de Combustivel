@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class postodecombustivel {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+
+        int combustivel = 4;
+        int diesel = 3;
+        int gasolina = 2; 
+        int alcool = 1;
+        int dieseltotal = 0, gasolinatotal = 0, alcooltotal = 0;
+
+
+        System.out.println("Selecione o combustivel correto na maquina");
+
+       
+        while (combustivel >= 1 && combustivel < 5) {
+            combustivel = sc.nextInt();
+
+            if (combustivel < 1 || combustivel > 4) {
+                System.out.println("CODIGO INVALIDO, digite novamente:");
+                combustivel = sc.nextInt();
+            }
+
+            if (combustivel == alcool) {
+            alcooltotal += 1;
+            }
+
+            if (combustivel == diesel) {
+            dieseltotal += 1;
+            }
+
+            if (combustivel == gasolina) {
+            gasolinatotal += 1;
+            }
+
+            if (combustivel == 4) {
+                System.out.println("MUITO OBRIGADO.");
+                System.out.println("Alcool: " + alcooltotal);
+                System.out.println("Gasolina: " + gasolinatotal);
+                System.out.println("Diesel: " + dieseltotal);
+
+            }
+            
+        }
+
+        sc.close();
+    }
+}
