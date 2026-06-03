@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class senhateste {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+
+        int senha;
+        senha = 1457;
+        int tentativa;
+        
+        System.out.println("Digite a senha:");
+        tentativa = sc.nextInt();
+        while (tentativa != senha)
+        {
+            System.out.println("Você errou.");
+            tentativa = sc.nextInt();
+        } 
+        
+        System.out.println("Você acertou!");
+        
+       
+        sc.close();
+    }
+}
