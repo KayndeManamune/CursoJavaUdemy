@@ -1,0 +1,33 @@
+package Secao6;
+
+import java.util.Scanner;
+
+public class Sessao2 {
+    
+    public static void main(String[] args) {
+        
+    Scanner sc = new Scanner (System.in);
+
+    int i = 0;
+    int dentro = 0;
+    int fora = 0;
+
+    for (int N = sc.nextInt(); N > i; i += 1) {
+
+        int numero = sc.nextInt();
+
+            if (numero >= 10 && numero <= 20) {
+                dentro += 1;
+            } else { 
+                fora += 1;
+        }
+
+    }
+
+    System.out.println(dentro + " in");
+    System.out.println(fora + " out");
+    sc.close();
+
+    }
+  
+}
