@@ -1,0 +1,30 @@
+package Secao6;
+
+import java.util.Scanner;
+
+public class Sessao3 {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        int i = 0;
+    
+        for (int N = sc.nextInt(); N > i; i += 1) {
+
+            System.out.println("Digite seu primeiro numero:");
+            double n1 = sc.nextDouble();
+
+            System.out.println("Digite seu segundo numero:");
+            double n2 = sc.nextDouble();
+
+            System.out.println("Digite seu terceiro numero:");
+            double n3 = sc.nextDouble();
+
+            System.out.printf ("%.1f%n", ((n1 * 2) + (n2 * 3) + (n3 * 5)) / 10.0);
+
+        }
+
+        sc.close();
+
+    }
+}
