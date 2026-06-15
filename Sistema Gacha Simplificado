@@ -1,0 +1,54 @@
+package GachaSystem;
+
+import java.util.Scanner;
+import java.util.Random;
+import java.lang.Math;
+
+public class gachasystem {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        Random random = new Random();
+
+        int pity = 0, Personagens5estrelas = 0;
+
+        String resp;
+
+        double Warp, chance;
+
+        do {
+            if (pity < 72) {
+                chance = 0.994;
+            } else {
+                chance = 0.994 - ((pity - 72) * 0.05);
+            }
+            // Chance base de pegar o 5* acima.
+
+            Warp = random.nextDouble();
+
+            if (Warp > chance || pity == 90) {
+
+                System.out.println("5 Estrelas adquirido!");
+                resp = sc.next();
+                pity = 0;
+                Personagens5estrelas += 1;
+                
+
+            } else {
+                System.out.println("4 Estrelas nao adquirido!");
+
+                pity += 1;
+                resp = sc.next();
+            }
+            System.out.println("Pity: " + pity);
+        } while (!resp.equals("Sair"));
+
+        System.out.println("Voce adquiriu " + Personagens5estrelas + " personagens de 5 estrelas!" );
+
+        sc.close();
+
+    }
+
+}
